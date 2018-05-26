@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/stympy/faker.git
+  revision: b642f20600e774cb2efef60f0226577ada7ca030
+  branch: master
+  specs:
+    faker (1.8.7)
+      i18n (>= 0.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -195,6 +203,7 @@ PLATFORMS
 DEPENDENCIES
   devise_token_auth
   factory_bot_rails (~> 4.0)
+  faker!
   listen (>= 3.0.5, < 3.2)
   multi_json
   omniauth
