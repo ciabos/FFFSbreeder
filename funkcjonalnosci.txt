@@ -1,0 +1,21 @@
+funkcjonalnosci:
+Rejestracja jako hodowca
+Logowanie
+Edycja danych
+Wyswietlanie hodowcow
+Wyswietlanie danego hodowcy
+Wyswietlanie miotow hodowcow
+Wyswietlanie zwierzat hodowcow
+Wyswietlanie swoich miotow
+Wyswietlanie swoich zwierzat
+Wyswietlanie danego miotu
+Wyswietlanie danego zwierzecia
+Wyswietlanie mamy danego miotu
+Wyswietlanie taty danego miotu
+Wyswietlanie hodowcy danego miotu
+Dodanie miotow
+Dodanie zwierzat do miotow
+Edycja danych miotu
+Edycja danych zwierzat
+Usuwanie miotow
+Usuwanie zwierzat
