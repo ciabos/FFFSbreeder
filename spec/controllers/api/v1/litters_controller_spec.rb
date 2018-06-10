@@ -31,6 +31,26 @@ describe Api::V1::LittersController , type: :request do
     end
   end
 
+  describe "#create" do
+    it "creates litter" do
+      breeder = create(:breeder)
+
+      auth_headers = breeder.create_new_auth_token
+      birth_date = Time.zone.now
+      expect {
+        post "/api/v1/litters", headers: auth_headers, params: {
+          litter: {
+            name: "litter 1",
+            birth_date: birth_date,
+            expected_traits: ["tall", "thin"]
+          }
+        }
+      }.to change(Litter, :count).by(1)
+      litter = Litter.last
+      expect(litter.name).to eq("litter 1")
+    end
+  end
+
   def json
     JSON.parse(response.body)
   end

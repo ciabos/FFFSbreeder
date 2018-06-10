@@ -5,8 +5,9 @@ Rails.application.routes.draw do
     namespace :v1 do
       mount_devise_token_auth_for 'Breeder', at: 'breeder_auth'
       resources :welcome, only: [:index]
-      resources :litters, only: [:index, :show]
+      resources :litters, only: [:index, :show, :create]
       resources :breeders, only: [:index, :show]
+      resources :animals, only: [:show, :create]
     end
   end
 end
